@@ -4,79 +4,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shot on Film Tech - Cinematic Technology Solutions</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="hero.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="animations.css">
-    <link rel="stylesheet" href="responsive.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            color: #ddd;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .cta-button:hover {
+            background-color: #ee5a52;
+        }
+        
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .nav-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .nav-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .nav-card h3 {
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+        
+        .nav-card a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .nav-card a:hover {
+            color: #764ba2;
+        }
+        
+        .nav-card p {
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+        
+        footer p {
+            margin: 10px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section-title h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .section-title p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .hero {
+                padding: 50px 20px;
+            }
+            
+            .hero h2 {
+                font-size: 1.8em;
+            }
+            
+            .nav-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header/Navigation -->
-    <div id="header-container"></div>
+    <!-- Header -->
+    <header>
+        <h1>🎬 Shot on Film Tech</h1>
+        <p>Cinematic Technology Solutions</p>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Shot on Film Tech</h1>
-            <p>Premium Cinematic Technology Solutions</p>
-            <a href="brand.html" class="cta-button">Explore Our Services</a>
-        </div>
+        <h2>Welcome to Shot on Film Tech</h2>
+        <p>Your premier destination for advanced film production technology and equipment</p>
+        <a href="brand.html" class="cta-button">Explore Our Services →</a>
     </section>
 
-    <!-- Main Navigation Links -->
-    <section class="main-nav-section">
-        <div class="container">
-            <h2>Welcome to Shot on Film Tech</h2>
-            <p>Your premier destination for advanced film production technology and equipment</p>
+    <!-- Main Navigation -->
+    <div class="container">
+        <div class="section-title">
+            <h2>Discover What We Offer</h2>
+            <p>Explore our comprehensive range of services and solutions</p>
+        </div>
+        
+        <div class="nav-grid">
+            <div class="nav-card">
+                <h3><a href="brand.html">Our Brand</a></h3>
+                <p>Discover our story, mission, and values in the film production industry</p>
+            </div>
             
-            <div class="nav-grid">
-                <div class="nav-card">
-                    <h3><a href="brand.html">Our Brand</a></h3>
-                    <p>Discover our story, mission, and values</p>
-                </div>
-                <div class="nav-card">
-                    <h3><a href="services.html">Services</a></h3>
-                    <p>Explore our comprehensive production services</p>
-                </div>
-                <div class="nav-card">
-                    <h3><a href="equipment.html">Equipment</a></h3>
-                    <p>Browse our premium film production equipment</p>
-                </div>
-                <div class="nav-card">
-                    <h3><a href="portfolio.html">Portfolio</a></h3>
-                    <p>View our previous projects and productions</p>
-                </div>
-                <div class="nav-card">
-                    <h3><a href="industries.html">Industries</a></h3>
-                    <p>See which industries we serve</p>
-                </div>
-                <div class="nav-card">
-                    <h3><a href="process.html">Our Process</a></h3>
-                    <p>Learn how we work with our clients</p>
-                </div>
-                <div class="nav-card">
-                    <h3><a href="testimonials.html">Testimonials</a></h3>
-                    <p>Read what our clients say about us</p>
-                </div>
-                <div class="nav-card">
-                    <h3><a href="contact.html">Contact Us</a></h3>
-                    <p>Get in touch for inquiries and bookings</p>
-                </div>
-                <div class="nav-card">
-                    <h3><a href="FAQ.html">FAQ</a></h3>
-                    <p>Frequently asked questions</p>
-                </div>
+            <div class="nav-card">
+                <h3><a href="services.html">Services</a></h3>
+                <p>Explore our comprehensive production and technology services</p>
+            </div>
+            
+            <div class="nav-card">
+                <h3><a href="equipment.html">Equipment</a></h3>
+                <p>Browse our premium film production equipment catalog</p>
+            </div>
+            
+            <div class="nav-card">
+                <h3><a href="portfolio.html">Portfolio</a></h3>
+                <p>View our previous projects and successful productions</p>
+            </div>
+            
+            <div class="nav-card">
+                <h3><a href="industries.html">Industries</a></h3>
+                <p>See which industries and sectors we serve best</p>
+            </div>
+            
+            <div class="nav-card">
+                <h3><a href="process.html">Our Process</a></h3>
+                <p>Learn how we work with our clients from start to finish</p>
+            </div>
+            
+            <div class="nav-card">
+                <h3><a href="testimonials.html">Testimonials</a></h3>
+                <p>Read what our satisfied clients say about us</p>
+            </div>
+            
+            <div class="nav-card">
+                <h3><a href="contact.html">Contact Us</a></h3>
+                <p>Get in touch for inquiries, bookings, and collaborations</p>
+            </div>
+            
+            <div class="nav-card">
+                <h3><a href="FAQ.html">FAQ</a></h3>
+                <p>Frequently asked questions about our services</p>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
-    <div id="footer-container"></div>
-
-    <script src="main.js"></script>
-    <script src="ajax.js"></script>
-    <script src="navbar.js"></script>
-    <script src="mobile-menu.js"></script>
+    <footer>
+        <p>&copy; 2024 Shot on Film Tech. All rights reserved.</p>
+        <p>Premium Cinematic Technology Solutions</p>
+    </footer>
 </body>
 </html>
