@@ -1,2 +1,13 @@
-# Shot on Film Tech
-theme: jekyll-theme-slate
+title: Shot on Film Tech
+description: Premium Cinematic Technology Solutions
+author: Shot on Film Tech
+email: contact@shotonfilmtech.co
+url: https://harryclover02131998-dev.github.io/shot-on-filmtech-co
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+# Disable Jekyll from processing HTML
+include: [".nojekyll"]
