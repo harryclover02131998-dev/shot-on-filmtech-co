@@ -3,276 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shot on Film Tech - Premium Cinematic Technology Solutions">
-    <meta name="theme-color" content="#1a1a1a">
-    <title>Shot on Film Tech - Cinematic Technology Solutions</title>
+    <meta name="description" content="Shot on Film Tech - Premium Cinematic Technology & Professional Film Equipment">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Shot on Film Tech - Professional Cinematography</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         html {
             scroll-behavior: smooth;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
             line-height: 1.6;
-            color: #333;
-            background-color: #fafafa;
+            overflow-x: hidden;
         }
-        
-        /* Header Navigation */
-        header {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            color: white;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-        }
-        
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        header h1 {
-            font-size: 1.8em;
-            letter-spacing: 1px;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-        
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 0.95em;
-            transition: color 0.3s;
-            border-bottom: 2px solid transparent;
-            padding-bottom: 5px;
-        }
-        
-        .nav-links a:hover {
-            color: #ff6b6b;
-            border-bottom-color: #ff6b6b;
-        }
-        
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            background-attachment: fixed;
-            color: white;
-            padding: 120px 20px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 20% 50%, rgba(255,107,107,0.1) 0%, transparent 50%);
-            pointer-events: none;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .hero h2 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
-            font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-            line-height: 1.2;
-        }
-        
-        .hero p {
-            font-size: 1.4em;
-            margin-bottom: 40px;
-            opacity: 0.95;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: #ff6b6b;
-            color: white;
-            padding: 18px 50px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.1em;
-            font-weight: 600;
-            transition: all 0.3s;
-            cursor: pointer;
-            border: none;
-            box-shadow: 0 4px 15px rgba(255,107,107,0.4);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .cta-button:hover {
-            background-color: #ff5252;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(255,107,107,0.6);
-        }
-        
-        /* Section Title */
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-            padding-top: 60px;
-        }
-        
-        .section-title h2 {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-            color: #1a1a1a;
-            font-weight: 700;
-        }
-        
-        .section-title p {
-            color: #666;
-            font-size: 1.2em;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        /* Navigation Grid */
-        .nav-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 80px;
-        }
-        
-        .nav-card {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
-            transition: all 0.3s;
-            border-left: 4px solid #667eea;
-            position: relative;
-        }
-        
-        .nav-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            border-left-color: #ff6b6b;
-        }
-        
-        .nav-card h3 {
-            margin-bottom: 15px;
-            font-size: 1.5em;
-        }
-        
-        .nav-card a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 700;
-            transition: color 0.3s;
-        }
-        
-        .nav-card:hover a {
-            color: #764ba2;
-        }
-        
-        .nav-card p {
-            color: #666;
-            margin-top: 10px;
-            line-height: 1.8;
-        }
-        
-        /* Footer */
-        footer {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-            margin-top: 80px;
-            border-top: 4px solid #ff6b6b;
-        }
-        
-        footer p {
-            margin: 10px 0;
-            font-size: 1em;
-        }
-        
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .footer-links a {
-            color: #ddd;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .footer-links a:hover {
-            color: #ff6b6b;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.4em;
-            }
-            
-            .nav-links {
-                gap: 15px;
-                font-size: 0.85em;
-            }
-            
-            .hero {
-                padding: 80px 20px;
-            }
-            
-            .hero h2 {
-                font-size: 2.2em;
-            }
-            
-            .hero p {
-                font-size: 1.1em;
-            }
-            
-            .nav-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .section-title h2 {
-                font-size: 1.8em;
-            }
-        }
-        
+
         /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -283,112 +47,466 @@
                 transform: translateY(0);
             }
         }
-        
-        .nav-card {
-            animation: fadeInUp 0.6s ease-out forwards;
+
+        @keyframes glowPulse {
+            0%, 100% { text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88; }
+            50% { text-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88; }
         }
-        
-        .nav-card:nth-child(2) { animation-delay: 0.1s; }
-        .nav-card:nth-child(3) { animation-delay: 0.2s; }
-        .nav-card:nth-child(4) { animation-delay: 0.3s; }
-        .nav-card:nth-child(5) { animation-delay: 0.4s; }
-        .nav-card:nth-child(6) { animation-delay: 0.5s; }
-        .nav-card:nth-child(7) { animation-delay: 0.6s; }
-        .nav-card:nth-child(8) { animation-delay: 0.7s; }
-        .nav-card:nth-child(9) { animation-delay: 0.8s; }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            border-bottom: 2px solid #00ff88;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+            animation: fadeInDown 0.6s ease-out;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            color: #00ff88;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+            animation: glowPulse 3s ease-in-out infinite;
+        }
+
+        nav {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: all 0.3s;
+            position: relative;
+            padding-bottom: 5px;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #00ff88;
+            transition: width 0.3s;
+        }
+
+        nav a:hover {
+            color: #00ff88;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+            color: white;
+            padding: 150px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 2px solid #00ff88;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .hero h2 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            color: #00ff88;
+            font-weight: 900;
+            line-height: 1.2;
+            text-shadow: 0 0 30px rgba(0, 255, 136, 0.5);
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            color: #b0b0b0;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #00ff88 0%, #00cc6f 100%);
+            color: #0a0a0a;
+            padding: 16px 50px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: 2px solid #00ff88;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.8);
+            background: #00ff88;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Featured Images Section */
+        .featured-images {
+            padding: 80px 20px;
+            background: #0d0d0d;
+        }
+
+        .featured-images h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 60px;
+            color: #00ff88;
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+        }
+
+        .images-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .image-card {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+            border: 2px solid #00ff88;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s;
+            animation: slideInUp 0.6s ease-out;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+        }
+
+        .image-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 40px rgba(0, 255, 136, 0.5);
+            border-color: #00ffff;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .image-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .image-card h3 {
+            padding: 20px;
+            color: #00ff88;
+            font-size: 1.3em;
+            text-align: center;
+        }
+
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            margin: 80px 0 60px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .section-title h2 {
+            font-size: 3em;
+            color: #00ff88;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+        }
+
+        .section-title p {
+            font-size: 1.1em;
+            color: #a0a0a0;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0a0a;
+            border-top: 2px solid #00ff88;
+            color: #a0a0a0;
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 80px;
+            box-shadow: 0 -0 20px rgba(0, 255, 136, 0.2);
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.3em;
+            }
+
+            nav {
+                gap: 15px;
+                flex-wrap: wrap;
+                font-size: 0.85em;
+            }
+
+            .hero {
+                padding: 80px 20px;
+            }
+
+            .hero h2 {
+                font-size: 2.2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .images-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2 {
+                font-size: 2em;
+            }
+        }
+
+        /* Animation Helper */
+        .slide-in-left {
+            animation: slideInLeft 0.6s ease-out;
+        }
+
+        .slide-in-right {
+            animation: slideInRight 0.6s ease-out;
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
     </style>
 </head>
 <body>
     <!-- Header Navigation -->
     <header>
-        <div class="header-content">
-            <h1>🎬 Shot on Film Tech</h1>
+        <div class="header-container">
+            <h1>🎬 SHOT ON FILM TECH</h1>
             <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <a href="index.html">Home</a>
+                <a href="brand.html">Brand</a>
+                <a href="equipment.html">Equipment</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero">
         <div class="hero-content">
-            <h2>Welcome to Shot on Film Tech</h2>
-            <p>Your Premier Destination for Advanced Film Production Technology</p>
-            <a href="#services" class="cta-button">Explore Our Services</a>
+            <h2>Professional Cinematic Technology</h2>
+            <p>Premium Film Equipment & Camera Systems for World-Class Production</p>
+            <a href="equipment.html" class="cta-button">Explore Equipment</a>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <div class="container">
-        <section id="services">
-            <div class="section-title">
-                <h2>Discover What We Offer</h2>
-                <p>Explore our comprehensive range of professional services and cutting-edge solutions</p>
-            </div>
+    <!-- Featured Equipment Images -->
+    <section class="featured-images">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 60px; color: #00ff88; text-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">Professional Equipment Gallery</h2>
             
-            <div class="nav-grid">
-                <div class="nav-card">
-                    <h3><a href="brand.html">Our Brand</a></h3>
-                    <p>Discover our compelling story, mission, and core values in the film production industry</p>
+            <div class="images-grid">
+                <div class="image-card">
+                    <img src="Commercial%20Production-Cameras.png" alt="Commercial Production Cameras">
+                    <h3>Commercial Cameras</h3>
                 </div>
                 
-                <div class="nav-card">
-                    <h3><a href="services.html">Services</a></h3>
-                    <p>Explore our comprehensive production and technology services tailored to your needs</p>
+                <div class="image-card">
+                    <img src="Luxury%20Cameras.png" alt="Luxury Cameras">
+                    <h3>Luxury Cameras</h3>
                 </div>
                 
-                <div class="nav-card">
-                    <h3><a href="equipment.html">Equipment</a></h3>
-                    <p>Browse our premium film production equipment and state-of-the-art technology</p>
+                <div class="image-card">
+                    <img src="Virtual%20Production%20Equipment.png" alt="Virtual Production Equipment">
+                    <h3>Virtual Production</h3>
                 </div>
                 
-                <div class="nav-card">
-                    <h3><a href="portfolio.html">Portfolio</a></h3>
-                    <p>View our impressive portfolio of previous projects and successful productions</p>
+                <div class="image-card">
+                    <img src="Premium%20Film%20Technology.png" alt="Premium Film Technology">
+                    <h3>Premium Tech</h3>
                 </div>
                 
-                <div class="nav-card">
-                    <h3><a href="industries.html">Industries</a></h3>
-                    <p>See which industries and sectors we specialize in and serve best</p>
+                <div class="image-card">
+                    <img src="Global%20Production%20Studio.png" alt="Global Production Studio">
+                    <h3>Production Studio</h3>
                 </div>
                 
-                <div class="nav-card">
-                    <h3><a href="process.html">Our Process</a></h3>
-                    <p>Learn how we work with our clients from initial concept to final delivery</p>
-                </div>
-                
-                <div class="nav-card">
-                    <h3><a href="testimonials.html">Testimonials</a></h3>
-                    <p>Read what our satisfied clients and partners say about working with us</p>
-                </div>
-                
-                <div class="nav-card">
-                    <h3><a href="contact.html">Contact Us</a></h3>
-                    <p>Get in touch for inquiries, bookings, collaborations, and special requests</p>
-                </div>
-                
-                <div class="nav-card">
-                    <h3><a href="FAQ.html">FAQ</a></h3>
-                    <p>Find answers to frequently asked questions about our services and solutions</p>
+                <div class="image-card">
+                    <img src="Hero%20Banner-%20Cinematic%20Technology.png" alt="Cinematic Technology">
+                    <h3>Cinematic Tech</h3>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="container" style="padding: 80px 20px;">
+        <div class="section-title">
+            <h2>Why Choose Shot on Film Tech</h2>
+            <p>Industry-leading equipment and professional expertise for cinematography excellence</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-top: 60px;">
+            <div style="background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); border-left: 4px solid #00ff88; padding: 30px; border-radius: 8px; animation: slideInLeft 0.6s ease-out;" class="fade-in-up">
+                <h3 style="color: #00ff88; font-size: 1.3em; margin-bottom: 15px;">🎥 4K/8K Cameras</h3>
+                <p>State-of-the-art cinema cameras with professional resolution and color grading capabilities</p>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); border-left: 4px solid #00ff88; padding: 30px; border-radius: 8px; animation: slideInLeft 0.8s ease-out;" class="fade-in-up">
+                <h3 style="color: #00ff88; font-size: 1.3em; margin-bottom: 15px;">🔆 Professional Lenses</h3>
+                <p>Premium cinema lenses with optimized optical quality for commercial productions</p>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); border-left: 4px solid #00ff88; padding: 30px; border-radius: 8px; animation: slideInLeft 1s ease-out;" class="fade-in-up">
+                <h3 style="color: #00ff88; font-size: 1.3em; margin-bottom: 15px;">⚡ Complete Packages</h3>
+                <p>Full production setups including lighting, rigging, and support equipment</p>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); border-left: 4px solid #00ff88; padding: 30px; border-radius: 8px; animation: slideInRight 0.6s ease-out;" class="fade-in-up">
+                <h3 style="color: #00ff88; font-size: 1.3em; margin-bottom: 15px;">🌍 Global Support</h3>
+                <p>International equipment rental and on-site technical support worldwide</p>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); border-left: 4px solid #00ff88; padding: 30px; border-radius: 8px; animation: slideInRight 0.8s ease-out;" class="fade-in-up">
+                <h3 style="color: #00ff88; font-size: 1.3em; margin-bottom: 15px;">🎬 Expert Team</h3>
+                <p>Award-winning cinematographers and technical specialists at your service</p>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); border-left: 4px solid #00ff88; padding: 30px; border-radius: 8px; animation: slideInRight 1s ease-out;" class="fade-in-up">
+                <h3 style="color: #00ff88; font-size: 1.3em; margin-bottom: 15px;">💼 Reliable Delivery</h3>
+                <p>Dependable equipment maintenance and on-time delivery for every project</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section style="background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); padding: 80px 20px; text-align: center; border-top: 2px solid #00ff88; border-bottom: 2px solid #00ff88; animation: fadeInUp 0.8s ease-out;">
+        <div class="container">
+            <h2 style="font-size: 2.5em; color: #00ff88; margin-bottom: 20px; text-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">Ready to Elevate Your Production?</h2>
+            <p style="font-size: 1.1em; color: #b0b0b0; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">Contact our team today for professional cinematography equipment and services</p>
+            <a href="contact.html" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer id="contact">
+    <footer>
         <p>&copy; 2024 Shot on Film Tech. All rights reserved.</p>
-        <p>Premium Cinematic Technology Solutions</p>
-        <div class="footer-links">
-            <a href="contact.html">Contact</a>
-            <a href="brand.html">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="privacy.html">Privacy Policy</a>
-        </div>
+        <p>Professional Cinematic Technology & Equipment Solutions</p>
     </footer>
+
+    <script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.image-card, .fade-in-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
