@@ -1,0 +1,16 @@
+/* testimonials.css */
+.testimonials{padding:5rem 1.5rem;background:#fff}
+.testimonials__container{max-width:1200px;margin:0 auto}
+.testimonials__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.testimonial-card{background:#fff;border:1px solid #e8e8e8;border-radius:20px;padding:2rem;box-shadow:0 10px 30px rgba(0,0,0,.06);transition:.3s}
+.testimonial-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.1)}
+.testimonial-card__quote{font-size:1rem;line-height:1.8;color:#555;margin-bottom:1.5rem}
+.testimonial-card__author{display:flex;align-items:center;gap:1rem}
+.testimonial-card__avatar{width:56px;height:56px;border-radius:50%;object-fit:cover}
+.testimonial-card__name{font-weight:700;color:#111}
+.testimonial-card__role{font-size:.9rem;color:#777}
+.testimonial-card__stars{color:#f5b301;letter-spacing:2px;margin-bottom:1rem}
+@media (max-width:768px){
+.testimonials{padding:3.5rem 1rem}
+.testimonials__grid{gap:1.25rem}
+}

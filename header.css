@@ -1,0 +1,108 @@
+/* header.css - Production-ready responsive header */
+
+:root{
+  --header-height:80px;
+  --bg:rgba(10,10,10,.72);
+  --text:#fff;
+  --accent:#8fdcff;
+  --border:rgba(255,255,255,.08);
+  --shadow:0 10px 30px rgba(0,0,0,.18);
+}
+
+.site-header{
+  position:fixed;
+  inset:0 0 auto 0;
+  height:var(--header-height);
+  display:flex;
+  align-items:center;
+  z-index:1000;
+  background:var(--bg);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);
+  transition:.3s ease;
+}
+
+.site-header.scrolled{
+  height:72px;
+  box-shadow:var(--shadow);
+}
+
+.header-container{
+  width:min(1200px,92%);
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:2rem;
+}
+
+.logo{
+  color:var(--text);
+  text-decoration:none;
+  font-size:1.5rem;
+  font-weight:700;
+}
+
+.nav{
+  display:flex;
+  gap:2rem;
+  align-items:center;
+}
+
+.nav a{
+  color:var(--text);
+  text-decoration:none;
+  font-weight:500;
+  position:relative;
+  transition:color .25s ease;
+}
+
+.nav a::after{
+  content:"";
+  position:absolute;
+  left:0;bottom:-6px;
+  width:0;height:2px;
+  background:var(--accent);
+  transition:width .25s ease;
+}
+
+.nav a:hover,
+.nav a:focus-visible{
+  color:var(--accent);
+}
+
+.nav a:hover::after,
+.nav a:focus-visible::after{
+  width:100%;
+}
+
+.header-actions{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+}
+
+.menu-toggle{
+  display:none;
+  background:none;
+  border:0;
+  color:var(--text);
+  font-size:1.6rem;
+  cursor:pointer;
+}
+
+@media (max-width:768px){
+  .menu-toggle{display:block;}
+  .nav{
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    display:none;
+    flex-direction:column;
+    background:#111;
+    padding:1rem;
+    border-bottom:1px solid var(--border);
+  }
+  .nav.active{display:flex;}
+}

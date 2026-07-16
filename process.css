@@ -1,0 +1,68 @@
+/* process.css
+   Styles for Process page/components */
+
+:root{
+  --primary:#0f172a;
+  --accent:#2563eb;
+  --bg:#ffffff;
+  --surface:#f8fafc;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --radius:18px;
+  --shadow:0 10px 30px rgba(0,0,0,.08);
+  --transition:.3s ease;
+}
+
+.process-section{padding:96px 20px;background:var(--bg)}
+.process-container{max-width:1200px;margin:auto}
+.process-header{text-align:center;margin-bottom:64px}
+.process-header h2{font-size:clamp(2rem,4vw,3.5rem);color:var(--primary);margin:0 0 12px}
+.process-header p{max-width:760px;margin:auto;color:var(--muted);line-height:1.8}
+
+.process-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:32px;
+}
+
+.process-card{
+background:var(--surface);
+border-radius:var(--radius);
+padding:32px;
+box-shadow:var(--shadow);
+position:relative;
+transition:transform var(--transition),box-shadow var(--transition);
+overflow:hidden;
+}
+.process-card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(0,0,0,.12)}
+.process-number{
+width:56px;height:56px;border-radius:50%;
+display:grid;place-items:center;
+background:var(--accent);color:#fff;
+font-weight:700;font-size:1.2rem;margin-bottom:20px;
+}
+.process-card h3{margin:0 0 12px;color:var(--primary)}
+.process-card p{margin:0;color:var(--muted);line-height:1.75}
+
+.process-line{
+position:absolute;top:28px;right:-40px;width:80px;height:2px;
+background:linear-gradient(to right,var(--accent),transparent);
+}
+
+.process-cta{text-align:center;margin-top:64px}
+.process-btn{
+display:inline-block;
+padding:14px 28px;
+background:var(--accent);
+color:#fff;
+text-decoration:none;
+border-radius:999px;
+transition:all var(--transition);
+}
+.process-btn:hover{filter:brightness(.95);transform:translateY(-2px)}
+
+@media (max-width:768px){
+.process-section{padding:72px 16px}
+.process-card{padding:24px}
+.process-line{display:none}
+}

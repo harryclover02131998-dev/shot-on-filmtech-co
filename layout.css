@@ -1,0 +1,52 @@
+/* layout.css
+   FilmTech Website Layout System
+*/
+
+:root{
+  --container-max:1200px;
+  --container-wide:1440px;
+  --gutter:24px;
+  --section-space:96px;
+}
+
+*{box-sizing:border-box}
+
+.container{
+  width:min(100% - 2*var(--gutter), var(--container-max));
+  margin-inline:auto;
+}
+
+.container-wide{
+  width:min(100% - 2*var(--gutter), var(--container-wide));
+  margin-inline:auto;
+}
+
+.section{
+  padding-block:var(--section-space);
+}
+
+.grid{
+  display:grid;
+  gap:32px;
+}
+
+.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+
+.flex{display:flex}
+.flex-center{display:flex;align-items:center;justify-content:center}
+.flex-between{display:flex;align-items:center;justify-content:space-between}
+
+.stack>*+*{margin-top:1rem}
+
+@media (max-width:992px){
+  .grid-4,.grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  :root{--section-space:72px}
+}
+
+@media (max-width:768px){
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .flex-between{flex-direction:column;align-items:flex-start;gap:1rem}
+  :root{--gutter:18px;--section-space:56px}
+}
