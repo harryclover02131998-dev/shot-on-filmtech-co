@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Shot on Film Tech - Premium Professional Cinematography Equipment & Camera Systems">
-    <meta name="theme-color" content="#0a0a0a">
+    <meta name="theme-color" content="#000000">
     <title>Shot on Film Tech - Professional Cinema Equipment</title>
     <style>
         * {
@@ -19,7 +19,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #0a0a0a;
+            background: #000000;
             color: #e0e0e0;
             line-height: 1.6;
             overflow-x: hidden;
@@ -50,12 +50,12 @@
 
         @keyframes glowPulse {
             0%, 100% { 
-                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+                text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
                 color: #ffffff;
             }
             50% { 
-                text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000;
-                color: #ffcccc;
+                text-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff;
+                color: #f5f5f5;
             }
         }
 
@@ -81,20 +81,15 @@
             }
         }
 
-        @keyframes redGlow {
-            0%, 100% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.3); }
-            50% { box-shadow: 0 0 40px rgba(255, 0, 0, 0.6); }
-        }
-
         /* Header */
         header {
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-            border-bottom: 2px solid #ff0000;
-            padding: 15px 0;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            border-bottom: 2px solid #ffffff;
+            padding: 20px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
             animation: fadeInDown 0.6s ease-out;
         }
 
@@ -110,21 +105,16 @@
         .logo-section {
             display: flex;
             align-items: center;
-            gap: 15px;
-        }
-
-        .logo-img {
-            height: 50px;
-            width: auto;
-            animation: fadeInDown 0.8s ease-out;
+            gap: 20px;
         }
 
         header h1 {
-            font-size: 1.5em;
+            font-size: 1.6em;
             color: #ffffff;
             letter-spacing: 2px;
             text-transform: uppercase;
             font-weight: 700;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
             animation: glowPulse 3s ease-in-out infinite;
         }
 
@@ -151,12 +141,13 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: #ff0000;
+            background: #ffffff;
             transition: width 0.3s;
         }
 
         nav a:hover {
             color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
 
         nav a:hover::after {
@@ -165,13 +156,13 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
             color: white;
             padding: 150px 20px;
             text-align: center;
             position: relative;
             overflow: hidden;
-            border-bottom: 2px solid #ff0000;
+            border-bottom: 2px solid #ffffff;
         }
 
         .hero::before {
@@ -181,7 +172,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 20% 50%, rgba(255, 0, 0, 0.1) 0%, transparent 50%);
+            background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
             pointer-events: none;
         }
 
@@ -199,7 +190,7 @@
             color: #ffffff;
             font-weight: 900;
             line-height: 1.2;
-            text-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
             letter-spacing: 1px;
         }
 
@@ -212,8 +203,8 @@
 
         .cta-button {
             display: inline-block;
-            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
-            color: #ffffff;
+            background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%);
+            color: #000000;
             padding: 16px 50px;
             text-decoration: none;
             border-radius: 50px;
@@ -221,16 +212,16 @@
             font-size: 1.1em;
             transition: all 0.3s;
             cursor: pointer;
-            border: 2px solid #ff0000;
+            border: 2px solid #ffffff;
             text-transform: uppercase;
             letter-spacing: 1px;
-            box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
         }
 
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
-            background: #ff2222;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+            background: #ffffff;
         }
 
         /* Container */
@@ -240,41 +231,54 @@
             padding: 0 20px;
         }
 
-        /* Products Images Section */
-        .featured-products {
-            padding: 80px 20px;
-            background: #0d0d0d;
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            margin: 80px 0 60px;
+            animation: fadeInUp 0.8s ease-out;
         }
 
-        .featured-products h2 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 60px;
+        .section-title h2 {
+            font-size: 3em;
             color: #ffffff;
-            text-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .section-title p {
+            font-size: 1.1em;
+            color: #a0a0a0;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Featured Products Grid */
+        .featured-products {
+            padding: 80px 20px;
+            background: #000000;
         }
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
             margin-bottom: 60px;
         }
 
         .product-card {
             background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
-            border: 2px solid #ff0000;
+            border: 2px solid #ffffff;
             border-radius: 10px;
             overflow: hidden;
             transition: all 0.3s;
             animation: slideInUp 0.6s ease-out;
-            box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
         }
 
         .product-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 0 40px rgba(255, 0, 0, 0.5);
-            border-color: #ff5555;
+            box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+            border-color: #ffffff;
         }
 
         .product-card img {
@@ -292,41 +296,44 @@
             padding: 25px;
         }
 
-        .product-card h3 {
-            color: #ffffff;
-            font-size: 1.4em;
-            margin-bottom: 12px;
-            text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
-        }
-
         .product-category {
-            color: #ff0000;
-            font-size: 0.9em;
+            color: #b0b0b0;
+            font-size: 0.85em;
             font-weight: 700;
             margin-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 1px;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+        }
+
+        .product-card h3 {
+            color: #ffffff;
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
         }
 
         .product-description {
-            color: #b0b0b0;
+            color: #a0a0a0;
             font-size: 0.95em;
             line-height: 1.6;
             margin-bottom: 15px;
         }
 
         .product-specs {
-            background: rgba(255, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.05);
             padding: 15px;
             border-radius: 5px;
             margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .product-specs h4 {
-            color: #ff0000;
+            color: #ffffff;
             font-size: 0.9em;
             margin-bottom: 8px;
             text-transform: uppercase;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
         }
 
         .spec-list {
@@ -337,7 +344,7 @@
 
         .spec-list li {
             padding: 4px 0;
-            border-bottom: 1px solid rgba(255, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .spec-list li:last-child {
@@ -346,126 +353,225 @@
 
         .spec-list li::before {
             content: '✓ ';
-            color: #ff0000;
+            color: #ffffff;
             font-weight: bold;
             margin-right: 8px;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
         }
 
-        /* Section Titles */
-        .section-title {
-            text-align: center;
-            margin: 80px 0 60px;
-            animation: fadeInUp 0.8s ease-out;
+        .product-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .section-title h2 {
-            font-size: 3em;
+        .price {
+            font-size: 1.6em;
             color: #ffffff;
-            margin-bottom: 20px;
-            text-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
 
-        .section-title p {
-            font-size: 1.1em;
-            color: #a0a0a0;
-            max-width: 700px;
-            margin: 0 auto;
+        .add-to-cart {
+            background: #ffffff;
+            color: #000000;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9em;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            text-shadow: none;
         }
 
-        /* Features Section */
+        .add-to-cart:hover {
+            background: #e0e0e0;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Why Choose Us Section */
+        .why-choose {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+            border-top: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+        }
+
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 40px;
             margin-top: 60px;
         }
 
         .feature-card {
             background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
-            border-left: 4px solid #ff0000;
+            border-left: 4px solid #ffffff;
             padding: 30px;
             border-radius: 8px;
             animation: slideInLeft 0.6s ease-out;
             transition: all 0.3s;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
         }
 
         .feature-card:hover {
-            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
         }
 
         .feature-card h3 {
             color: #ffffff;
-            font-size: 1.3em;
+            font-size: 1.4em;
             margin-bottom: 15px;
-            text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
         }
 
         .feature-card p {
             color: #a0a0a0;
+            line-height: 1.8;
         }
 
-        /* Services Section */
-        .services-section {
-            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+        /* Testimonials Section */
+        .testimonials-section {
             padding: 80px 20px;
-            border-top: 2px solid #ff0000;
-            border-bottom: 2px solid #ff0000;
+            background: #000000;
         }
 
-        .services-grid {
+        .testimonials-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
             margin-top: 60px;
         }
 
-        .service-box {
-            background: #0a0a0a;
+        .testimonial-card {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
             padding: 40px;
             border-radius: 8px;
-            border: 2px solid rgba(255, 0, 0, 0.2);
-            transition: all 0.3s;
+            border: 2px solid rgba(255, 255, 255, 0.1);
             animation: slideInRight 0.6s ease-out;
+            transition: all 0.3s;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
         }
 
-        .service-box:hover {
-            border-color: #ff0000;
-            box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
-            transform: translateY(-5px);
+        .testimonial-card:hover {
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+            border-color: #ffffff;
         }
 
-        .service-box h3 {
-            color: #ff0000;
-            font-size: 1.4em;
+        .stars {
+            color: #ffffff;
+            font-size: 1.2em;
             margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
         }
 
-        .service-box p {
-            color: #b0b0b0;
+        .testimonial-text {
+            color: #a0a0a0;
+            margin-bottom: 20px;
+            font-style: italic;
             line-height: 1.8;
+        }
+
+        .testimonial-author {
+            color: #ffffff;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .testimonial-role {
+            color: #808080;
+            font-size: 0.9em;
         }
 
         /* Footer */
         footer {
-            background: #0a0a0a;
-            border-top: 2px solid #ff0000;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            border-top: 3px solid #ffffff;
             color: #a0a0a0;
-            text-align: center;
-            padding: 50px 20px;
-            margin-top: 80px;
-            box-shadow: 0 -0 20px rgba(255, 0, 0, 0.2);
+            padding: 60px 20px 30px;
+            box-shadow: 0 -5px 40px rgba(255, 255, 255, 0.15);
+            animation: fadeInUp 0.8s ease-out;
         }
 
-        footer p {
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .footer-section h3 {
+            color: #ffffff;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section ul li a {
+            color: #a0a0a0;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .footer-bottom {
+            border-top: 2px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
             margin: 10px 0;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-bottom strong {
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            font-size: 1.2em;
+            transition: all 0.3s;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .social-links a:hover {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
         }
 
         /* Responsive */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 1.1em;
+                font-size: 1.2em;
             }
 
             nav {
@@ -482,10 +588,6 @@
                 font-size: 2.2em;
             }
 
-            .hero p {
-                font-size: 1em;
-            }
-
             .products-grid {
                 grid-template-columns: 1fr;
             }
@@ -494,19 +596,6 @@
                 font-size: 2em;
             }
         }
-
-        /* Animation Helper */
-        .slide-in-left {
-            animation: slideInLeft 0.6s ease-out;
-        }
-
-        .slide-in-right {
-            animation: slideInRight 0.6s ease-out;
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 0.6s ease-out;
-        }
     </style>
 </head>
 <body>
@@ -514,8 +603,7 @@
     <header>
         <div class="header-container">
             <div class="logo-section">
-                <img src="Shot%20On%20REC%20logo.png" alt="Shot On REC Logo" class="logo-img">
-                <h1>SHOT ON FILM TECH</h1>
+                <h1>🎬 SHOT ON FILM TECH</h1>
             </div>
             <nav>
                 <a href="index.html">Home</a>
@@ -540,7 +628,10 @@
     <!-- Featured Products Section -->
     <section class="featured-products" id="products">
         <div class="container">
-            <h2>Premium Cinema Equipment</h2>
+            <div class="section-title">
+                <h2>Featured Products</h2>
+                <p>Professional-grade cinema equipment trusted by filmmakers worldwide</p>
+            </div>
             
             <div class="products-grid">
                 <!-- Product 1 -->
@@ -548,17 +639,20 @@
                     <img src="Commercial%20Production-Cameras.png" alt="Commercial Production Cameras">
                     <div class="product-info">
                         <div class="product-category">Cinema Cameras</div>
-                        <h3>Commercial Production Cameras</h3>
-                        <p class="product-description">Professional-grade cinema cameras engineered for commercial production, broadcast, and high-end corporate video content.</p>
+                        <h3>Commercial Cinema Camera</h3>
+                        <p class="product-description">Professional-grade cinema camera for commercial production with advanced imaging technology.</p>
                         <div class="product-specs">
-                            <h4>Specifications</h4>
+                            <h4>Key Features</h4>
                             <ul class="spec-list">
-                                <li>4K/8K Recording Capability</li>
+                                <li>4K/8K Recording</li>
                                 <li>RAW Video Output</li>
                                 <li>Professional Color Grading</li>
                                 <li>High Frame Rate Support</li>
-                                <li>Modular Design System</li>
                             </ul>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$45,999</span>
+                            <button class="add-to-cart">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -568,17 +662,20 @@
                     <img src="Luxury%20Cameras.png" alt="Luxury Cinema Cameras">
                     <div class="product-info">
                         <div class="product-category">Premium Cameras</div>
-                        <h3>Luxury Cinema Systems</h3>
-                        <p class="product-description">High-end luxury cinema cameras with uncompromised image quality, designed for feature films and premium content creation.</p>
+                        <h3>Luxury Cinema System</h3>
+                        <p class="product-description">High-end luxury cinema camera with uncompromised image quality for feature films.</p>
                         <div class="product-specs">
-                            <h4>Specifications</h4>
+                            <h4>Key Features</h4>
                             <ul class="spec-list">
                                 <li>8K Resolution Capture</li>
                                 <li>Full-Frame Sensor</li>
                                 <li>Advanced Color Science</li>
                                 <li>Zero Distortion Optics</li>
-                                <li>Professional Workflow Integration</li>
                             </ul>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$78,999</span>
+                            <button class="add-to-cart">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -588,17 +685,20 @@
                     <img src="Premium%20Film%20Technology.png" alt="Premium Film Technology">
                     <div class="product-info">
                         <div class="product-category">Film Technology</div>
-                        <h3>Premium Film Technology</h3>
-                        <p class="product-description">Cutting-edge film scanning and digital cinema technology for archival, restoration, and professional film-to-digital conversion.</p>
+                        <h3>Film Scanner Pro</h3>
+                        <p class="product-description">Professional film scanning and digital conversion technology for archival restoration.</p>
                         <div class="product-specs">
-                            <h4>Specifications</h4>
+                            <h4>Key Features</h4>
                             <ul class="spec-list">
-                                <li>35mm/16mm Film Scanning</li>
+                                <li>35mm/16mm Scanning</li>
                                 <li>4K/8K Digital Transfer</li>
                                 <li>Color Correction Tools</li>
-                                <li>Frame-by-Frame Processing</li>
                                 <li>Archive-Quality Output</li>
                             </ul>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$34,999</span>
+                            <button class="add-to-cart">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -608,17 +708,20 @@
                     <img src="Virtual%20Production%20Equipment.png" alt="Virtual Production Technology">
                     <div class="product-info">
                         <div class="product-category">Virtual Production</div>
-                        <h3>Virtual Production Systems</h3>
-                        <p class="product-description">Advanced LED volume and virtual production technology for real-time rendering and in-camera visual effects creation.</p>
+                        <h3>Virtual Production System</h3>
+                        <p class="product-description">Advanced LED volume technology for real-time rendering and in-camera visual effects.</p>
                         <div class="product-specs">
-                            <h4>Specifications</h4>
+                            <h4>Key Features</h4>
                             <ul class="spec-list">
-                                <li>4K/8K LED Display Walls</li>
-                                <li>Real-Time Rendering Engine</li>
+                                <li>4K/8K LED Display</li>
+                                <li>Real-Time Rendering</li>
                                 <li>Motion Capture Integration</li>
                                 <li>Extended Reality Support</li>
-                                <li>Live Keying Technology</li>
                             </ul>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$125,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -628,17 +731,20 @@
                     <img src="Global%20Production%20Studio.png" alt="Professional Production Studio">
                     <div class="product-info">
                         <div class="product-category">Studio Systems</div>
-                        <h3>Global Production Studio Equipment</h3>
-                        <p class="product-description">Complete studio infrastructure and production systems designed for professional broadcast and content creation facilities worldwide.</p>
+                        <h3>Professional Studio Package</h3>
+                        <p class="product-description">Complete studio infrastructure for professional broadcast and content creation.</p>
                         <div class="product-specs">
-                            <h4>Specifications</h4>
+                            <h4>Key Features</h4>
                             <ul class="spec-list">
                                 <li>Multi-Camera Systems</li>
                                 <li>Professional Lighting Rigs</li>
                                 <li>Sound Engineering Setup</li>
                                 <li>Studio Automation Control</li>
-                                <li>Post-Production Integration</li>
                             </ul>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$95,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -648,17 +754,20 @@
                     <img src="Hero%20Banner-%20Cinematic%20Technology.png" alt="Cinematic Technology">
                     <div class="product-info">
                         <div class="product-category">Cinema Tech</div>
-                        <h3>Cinematic Technology Platform</h3>
-                        <p class="product-description">Integrated cinematic technology platform combining cutting-edge cameras, optics, and post-production tools for complete creative control.</p>
+                        <h3>Cinematic Tech Platform</h3>
+                        <p class="product-description">Integrated cinematography platform combining cameras, optics, and post-production tools.</p>
                         <div class="product-specs">
-                            <h4>Specifications</h4>
+                            <h4>Key Features</h4>
                             <ul class="spec-list">
                                 <li>Integrated Camera System</li>
                                 <li>Professional Lens Library</li>
                                 <li>Color Grading Suites</li>
                                 <li>VFX Integration Tools</li>
-                                <li>Complete Workflow Solution</li>
                             </ul>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$150,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -666,101 +775,165 @@
         </div>
     </section>
 
-    <!-- Cameras & Lenses Section -->
-    <section class="container" style="padding: 80px 20px;">
-        <div class="section-title">
-            <h2>Professional Cameras & Lenses</h2>
-            <p>Industry-standard cinematography equipment trusted by professional filmmakers worldwide</p>
-        </div>
-
-        <div class="features-grid">
-            <div class="feature-card">
-                <h3>🎥 Cinema Cameras</h3>
-                <p>Professional-grade cinema cameras with sensor technology optimized for cinematic image quality, RAW recording, and post-production flexibility.</p>
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Shot on Film Tech</h2>
+                <p>Industry-leading equipment and professional expertise for cinematography excellence</p>
             </div>
 
-            <div class="feature-card">
-                <h3>🔆 Professional Lenses</h3>
-                <p>Premium cinema lenses featuring advanced optical design, minimal distortion, and consistent T-stops for professional cinematography.</p>
-            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🎥 Professional Quality</h3>
+                    <p>Premium-grade cinema equipment trusted by industry professionals for broadcast and feature film production.</p>
+                </div>
 
-            <div class="feature-card">
-                <h3>⚡ Support Systems</h3>
-                <p>Complete camera support including rigging, stabilization, follow focus systems, and professional monitoring equipment.</p>
-            </div>
+                <div class="feature-card">
+                    <h3>🔆 Expert Support</h3>
+                    <p>Dedicated technical specialists available 24/7 for equipment support and professional consultation.</p>
+                </div>
 
-            <div class="feature-card">
-                <h3>💡 Lighting Systems</h3>
-                <p>Professional lighting kits including LED panels, HMI systems, and softbox solutions for perfect on-set illumination.</p>
-            </div>
+                <div class="feature-card">
+                    <h3>⚡ Latest Technology</h3>
+                    <p>Cutting-edge cinematography equipment featuring the newest innovations in camera and lens technology.</p>
+                </div>
 
-            <div class="feature-card">
-                <h3>🎬 Post-Production</h3>
-                <p>Color grading, editing suites, and VFX workstations for professional finishing and post-production workflow.</p>
-            </div>
+                <div class="feature-card">
+                    <h3>💼 Competitive Pricing</h3>
+                    <p>Affordable rental and purchase options with flexible payment plans for productions of all sizes.</p>
+                </div>
 
-            <div class="feature-card">
-                <h3>📡 Transmission</h3>
-                <p>Wireless video transmission, streaming systems, and real-time monitoring for remote location production support.</p>
+                <div class="feature-card">
+                    <h3>🌍 Global Network</h3>
+                    <p>International equipment rental and on-site technical support available worldwide for any production.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>📡 Reliable Delivery</h3>
+                    <p>Fast and secure equipment shipping with professional setup and teardown support at your location.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services-section">
+    <!-- Happy Customers Section -->
+    <section class="testimonials-section">
         <div class="container">
             <div class="section-title">
-                <h2>Professional Services</h2>
-                <p>Complete cinematography and equipment support for your production</p>
+                <h2>Our Happy Customers</h2>
+                <p>See what professional filmmakers say about our equipment and services</p>
             </div>
 
-            <div class="services-grid">
-                <div class="service-box">
-                    <h3>Equipment Rental</h3>
-                    <p>Professional-grade camera equipment, lenses, and cinema systems available for short-term and long-term rental with technical support.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Shot on Film Tech provided exceptional equipment for our commercial production. The quality and support were outstanding!"</p>
+                    <div class="testimonial-author">John Thompson</div>
+                    <div class="testimonial-role">Cinematographer, Los Angeles</div>
                 </div>
 
-                <div class="service-box">
-                    <h3>Cinematography Consulting</h3>
-                    <p>Expert advice on camera selection, lens choices, and technical cinematography planning for your production needs.</p>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The rental process was seamless and their technical team helped us achieve the exact look we wanted for our feature film."</p>
+                    <div class="testimonial-author">Sarah Mitchell</div>
+                    <div class="testimonial-role">Film Director, New York</div>
                 </div>
 
-                <div class="service-box">
-                    <h3>On-Set Technical Support</h3>
-                    <p>Professional cinematographers and technical specialists available for on-set support and camera operation.</p>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Best equipment rental company in the industry. Their staff is knowledgeable and the gear is top-notch. Highly recommended!"</p>
+                    <div class="testimonial-author">Michael Chen</div>
+                    <div class="testimonial-role">Producer, Toronto</div>
                 </div>
 
-                <div class="service-box">
-                    <h3>Training & Workshops</h3>
-                    <p>Comprehensive training programs for cameras, lenses, and professional cinematography techniques.</p>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"We've worked with Shot on Film Tech on multiple productions. Consistent quality, reliable service, and great pricing."</p>
+                    <div class="testimonial-author">Emma Rodriguez</div>
+                    <div class="testimonial-role">Editor, London</div>
                 </div>
 
-                <div class="service-box">
-                    <h3>Post-Production Services</h3>
-                    <p>Color grading, editing, VFX, and finishing services using industry-standard post-production equipment.</p>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"From camera selection to on-set support, their team made our commercial shoot incredibly smooth and professional."</p>
+                    <div class="testimonial-author">David Park</div>
+                    <div class="testimonial-role">Production Manager, Seoul</div>
                 </div>
 
-                <div class="service-box">
-                    <h3>Global Logistics</h3>
-                    <p>Worldwide equipment shipping, customs handling, and on-location setup for international productions.</p>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Exceptional customer service and premium equipment quality. Shot on Film Tech is our go-to equipment partner."</p>
+                    <div class="testimonial-author">Lisa Anderson</div>
+                    <div class="testimonial-role">Content Creator, Sydney</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Call to Action -->
-    <section style="background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); padding: 80px 20px; text-align: center; border-top: 2px solid #ff0000; border-bottom: 2px solid #ff0000; animation: fadeInUp 0.8s ease-out;">
+    <section style="background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%); padding: 80px 20px; text-align: center; border-top: 2px solid #ffffff; border-bottom: 2px solid #ffffff; animation: fadeInUp 0.8s ease-out;">
         <div class="container">
-            <h2 style="font-size: 2.5em; color: #ffffff; margin-bottom: 20px; text-shadow: 0 0 20px rgba(255, 0, 0, 0.3);">Ready to Elevate Your Production?</h2>
-            <p style="font-size: 1.1em; color: #b0b0b0; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">Contact our team today for professional cinematography equipment and technical support for your next production</p>
+            <h2 style="font-size: 2.5em; color: #ffffff; margin-bottom: 20px; text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);">Ready to Elevate Your Production?</h2>
+            <p style="font-size: 1.1em; color: #b0b0b0; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">Contact our team today for professional cinematography equipment and technical support for your next project</p>
             <a href="contact.html" class="cta-button">Get in Touch Now</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Shot on Film Tech. All rights reserved.</p>
-        <p>Premium Professional Cinema Equipment & Cinematography Solutions</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p style="color: #a0a0a0; line-height: 1.8;">Shot on Film Tech is a leading provider of professional cinematography equipment and services for filmmakers worldwide.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="equipment.html">Cinema Cameras</a></li>
+                    <li><a href="equipment.html">Professional Lenses</a></li>
+                    <li><a href="equipment.html">Lighting Systems</a></li>
+                    <li><a href="equipment.html">Support Equipment</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="services.html">Equipment Rental</a></li>
+                    <li><a href="services.html">Cinematography Consulting</a></li>
+                    <li><a href="services.html">On-Set Support</a></li>
+                    <li><a href="services.html">Post-Production</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                    <li><a href="#">Phone: +1 (555) 123-4567</a></li>
+                    <li><a href="#">Email: info@shotonfilmtech.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#" title="Facebook">f</a>
+                <a href="#" title="Twitter">𝕏</a>
+                <a href="#" title="Instagram">📷</a>
+                <a href="#" title="LinkedIn">in</a>
+            </div>
+            <p><strong>Shot on Film Tech</strong> © 2024. All rights reserved.</p>
+            <p>Professional Cinema Equipment & Cinematography Solutions</p>
+            <p style="margin-top: 20px; color: #707070;">
+                <a href="#" style="color: #707070; text-decoration: none; margin: 0 10px;">Privacy Policy</a> | 
+                <a href="#" style="color: #707070; text-decoration: none; margin: 0 10px;">Terms of Service</a> | 
+                <a href="#" style="color: #707070; text-decoration: none; margin: 0 10px;">Cookie Policy</a>
+            </p>
+        </div>
     </footer>
 
     <script>
@@ -790,7 +963,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.product-card, .feature-card, .service-box, .fade-in-up').forEach(el => {
+        document.querySelectorAll('.product-card, .feature-card, .testimonial-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(20px)';
             el.style.transition = 'all 0.6s ease-out';
